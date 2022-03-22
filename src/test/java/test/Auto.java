@@ -10,7 +10,7 @@ public class Auto{
 
     public int cantidadAsientos(){
         int count=0;
-        for(int i=0; i < this.asientos.length(); i++){
+        for(int i=0; i < this.asientos.length; i++){
             if(this.asientos[i]!=null){
                 count++;
             }
@@ -22,9 +22,9 @@ public class Auto{
         if(this.registro!=this.motor.registro){
             return "Las piezas no son originales";
         }
-        for(i=0; i<this.asientos.length; i++){
+        for(int i=0; i<this.asientos.length; i++){
             if(this.asientos[i]!=null){
-                if(this.asientos.registro!=this.registro){
+                if(this.asientos[i].registro!=this.registro){
                     return "Las piezas no son originales";
                 }
             }
